@@ -25,4 +25,8 @@ C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj.CoreCompileInputs.cache
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.exe
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.pdb
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.baml
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj.AssemblyReference.cache

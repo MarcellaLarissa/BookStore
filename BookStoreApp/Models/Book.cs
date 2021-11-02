@@ -8,13 +8,13 @@ namespace BookStoreApp.Models
 {
     public class Book
     {
-        public string ISBN { get; }
+        public long ISBN { get; }
         public string Title { get; }
         public string Author { get; }
         public string Description { get; }
         public int NumberInStock { get; }
 
-        public Book(string bookISBN, string title, string author, string description, int numberInStock)
+        public Book(long bookISBN, string title, string author, string description, int numberInStock)
         {
             //Book = new Book();
 

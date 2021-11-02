@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\marce\source\repos\BookStore\BookStoreApp\App.xaml
-11151548125
+3681696211
 
-12465859568
+14334870175
 122150950573
-MainWindow.xaml;
+MainWindow.xaml;Views\AddBook.xaml;Views\SearchResults.xaml;
 
-False
+True
 
