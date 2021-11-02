@@ -61,13 +61,21 @@
 
         <Grid Grid.Row="3">
             <ListView Grid.Row="3" Margin="0 25 0 0">
+                <ListViewItem />
+                <ListViewItem />
+                <ListViewItem />
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
                 <ListView.View>
                     <GridView>
                        
                         <GridViewColumn Header="ISBN #">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="9780441172719" />
+                                    <TextBlock Padding="0 0 20 0" Text="9780441172719" />
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
@@ -75,7 +83,7 @@
                         <GridViewColumn Header="Title">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="Dune" />
+                                    <TextBlock Padding="0 0 20 0" Text="Dune" />
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
@@ -83,7 +91,7 @@
                         <GridViewColumn Header="Author">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="Frank Herbert" />
+                                    <TextBlock Padding="0 0 20 0" Text="Frank Herbert" />
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
@@ -91,7 +99,7 @@
                         <GridViewColumn Header="Count">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="4" />
+                                    <TextBlock Padding="0 0 20 0" Text="4" />
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
