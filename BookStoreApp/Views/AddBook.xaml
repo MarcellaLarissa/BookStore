@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:BookStoreApp.Views" xmlns:viewmodel="clr-namespace:BookStoreApp.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:AddBookViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <!--check ^^^ DataContext include-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
@@ -93,11 +94,13 @@
         <StackPanel Grid.Row="5" 
                     Margin="10 25 0 0" 
                     Orientation="Horizontal">
-            <Button Content="Submit" 
+            <Button Command="{Binding SubmitCommand}"
+                    Content="Submit" 
                     Padding="10 5"
                     Width="80"
                     />
-            <Button Margin="10 0 0 0" 
+            <Button Command="{Binding CancelCommand}"
+                    Margin="10 0 0 0" 
                     Padding="10 5"
                     Content="Cancel" 
                     Width="80"

@@ -75,7 +75,9 @@
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Store.cs" />
     <Compile Include="ViewModel\AddBookViewModel.cs" />
+    <Compile Include="ViewModel\BookViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\SearchResultsViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="Views\AddBook.xaml.cs">

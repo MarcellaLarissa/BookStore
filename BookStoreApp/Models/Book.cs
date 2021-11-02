@@ -12,7 +12,7 @@ namespace BookStoreApp.Models
         public string Title { get; }
         public string Author { get; }
         public string Description { get; }
-        public int NumberInStock { get; }
+        public int Count { get; }
 
         public Book(long bookISBN, string title, string author, string description, int numberInStock)
         {
@@ -22,7 +22,7 @@ namespace BookStoreApp.Models
             Title = title;
             Author = author;
             Description = description;
-            NumberInStock = numberInStock;
+            Count = numberInStock;
 
         }
 
