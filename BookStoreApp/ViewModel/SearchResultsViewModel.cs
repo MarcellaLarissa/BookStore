@@ -12,6 +12,7 @@ namespace BookStoreApp.ViewModel
     class SearchResultsViewModel : ViewModelBase
     {
         public readonly ObservableCollection<BookViewModel> Book;
+        public IEnumerable<SearchResultsViewModel> SearchResults => (IEnumerable<SearchResultsViewModel>)Book; //remove cast?? this needs to point to the correct field timestamp 9:30 ViewModels
         public ICommand SearchCommand { get; }
 
         public ICommand AddCommand { get; }
