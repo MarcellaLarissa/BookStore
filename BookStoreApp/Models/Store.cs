@@ -18,5 +18,18 @@ namespace BookStoreApp.Models
 
             Inventory = new Inventory();
         }
+
+        public IEnumerable<Book> GetBookRecordForUser(string title)
+         //public IEnumerable<Book> GetBookRecordForUser(string title, string author, string keyword, int ISBN)
+        {
+           // return Inventory.GetBookByTitle(title) + Inventory.GetBookByAuthor(author) + Inventory.GetBookByKeyword(keyword) + Inventory.GetBookByISBN(ISBN);
+            return Inventory.GetBookByTitle(title);
+        }
+
+        public void CreateBookRecord(Book newBook)
+        {
+            Inventory.AddBook(newBook);
+        }
+
     }
 }

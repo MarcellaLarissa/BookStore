@@ -70,6 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Exceptions\BookRecordConflictException.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Store.cs" />
