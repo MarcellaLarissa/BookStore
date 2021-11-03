@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookStoreApp.Exceptions
 {
-    class BookRecordConflictException : Exception //extend???
+    class BookRecordConflictException : Exception //extends
     {
         public Book ExistingBook { get; }
         public Book NewBook { get; }

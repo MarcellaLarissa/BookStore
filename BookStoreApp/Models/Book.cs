@@ -27,10 +27,9 @@ namespace BookStoreApp.Models
         {
             if (myBook.ISBN != ISBN)
             {
-                return false; // no error
+                return false; 
             }
-
-            return true; // matching record
+            return true;
         }
     }
 }

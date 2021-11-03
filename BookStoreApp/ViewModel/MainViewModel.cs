@@ -22,18 +22,12 @@ namespace BookStoreApp.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        
-        /// <summary>
         /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
         public ViewModelBase CurrentViewModel { get; }
         public ViewModelBase CurrentViewModel2 { get; }
         public MainViewModel(Store _store)
         {
             CurrentViewModel = new AddBookViewModel(_store);
-            
-            //how to get _books here?
-            //CurrentViewModel2 = new SearchResultsViewModel(_books);
         }
     }
 }

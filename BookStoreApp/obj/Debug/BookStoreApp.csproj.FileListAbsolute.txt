@@ -1,10 +1,3 @@
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\MainWindow.g.cs
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.g.cs
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.g.cs
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\App.g.cs
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp_MarkupCompile.cache
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp_MarkupCompile.lref
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\BookStoreApp.exe.config
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\BookStoreApp.exe
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\BookStoreApp.pdb
@@ -19,6 +12,13 @@ C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\MainWindow.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\App.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp_MarkupCompile.cache
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp_MarkupCompile.lref
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\MainWindow.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.baml

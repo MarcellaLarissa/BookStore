@@ -15,7 +15,6 @@ namespace BookStoreApp
     /// </summary>
     public partial class App : Application
     {
-
         private readonly Store _store;
         public App()
         {

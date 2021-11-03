@@ -9,10 +9,9 @@ namespace BookStoreApp.ViewModel
 {
     public class BookViewModel : ViewModelBase
     {
-        private readonly Book _book; //is this supposed to be coming from the main?? if not, this needs to change
-        //public string ISBN { get; }
-        //public string ISBN => _book.ISBN.ToString();
-        public string ISBN { get; }
+        private readonly Book _book; 
+        //binding with values in SearchResults.xaml ~ line 83
+        public string ISBN => _book.ISBN.ToString();
         public string Title => _book.Title.ToString();
         public string Author => _book.Author.ToString();
         public string Description => _book.Description.ToString();
@@ -21,6 +20,5 @@ namespace BookStoreApp.ViewModel
         {
             _book = book;
         }
-
     }
 }

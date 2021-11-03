@@ -1,4 +1,5 @@
-﻿using BookStoreApp.Models;
+﻿using BookStoreApp.Commands;
+using BookStoreApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,25 +12,24 @@ namespace BookStoreApp.ViewModel
 {
     public class SearchResultsViewModel : ViewModelBase
     {
-        //private readonly Store _store;
-        public Book aTestBook;
-
+        public Book _book;
         public readonly ObservableCollection<BookViewModel> _books;
-        public IEnumerable<BookViewModel> Books => _books; //remove cast?? this needs to point to the correct field timestamp 9:30 ViewModels
+        public IEnumerable<BookViewModel> Books => _books; 
+
+        //commands
         public ICommand SearchCommand { get; }
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 
-        //public ICommand AddCommand { get; }
-
-        public SearchResultsViewModel(ObservableCollection<BookViewModel> myBooks)
+        public SearchResultsViewModel(ObservableCollection<BookViewModel> myBooks, Store store)
         {
             _books = new ObservableCollection<BookViewModel>();
 
-            myBooks.Add(new BookViewModel(aTestBook));
+            myBooks.Add(new BookViewModel(_book));
 
-            //myBooks.Add(new SearchResultsViewModel(myBooks));
-            //Book.Add(myBooks);
+            SearchCommand = new SearchCommand(this, store, _book);
+            EditCommand = new EditCommand(this, store, _book);
+            DeleteCommand = new DeleteCommand(this, store, _book);
         }
     }
 }

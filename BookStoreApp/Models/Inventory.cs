@@ -19,17 +19,17 @@ namespace BookStoreApp.Models
 
         public IEnumerable<Book> GetBookByTitle(string title)
         {
-            return BookList.Where(b => b.Title == title); //update this to search for substrings
+            return BookList.Where(b => b.Title == title); 
         }
 
         public IEnumerable<Book> GetBookByAuthor(string author)
         {
-            return BookList.Where(b => b.Author == author);//update this to search for substrings
+            return BookList.Where(b => b.Author == author);
         }
 
         public IEnumerable<Book> GetBookByKeyword(string keyword)
         {
-            return BookList.Where(b => b.Description == keyword);//update this to search for substrings
+            return BookList.Where(b => b.Description == keyword);
         }
 
         public IEnumerable<Book> GetBookByISBN(int bookISBN)
@@ -37,11 +37,8 @@ namespace BookStoreApp.Models
             return BookList.Where(b => b.ISBN == bookISBN); 
         }
 
-        public void AddBook(Book _book)// need to implement messages as a popup?
+        public void AddBook(Book _book)
         {
-            //string errorMessage = myBook.Title + " is already in the book store inventory.";
-            //string successMessage = myBook.Title + " has been added to the book store inventory.";
-
             foreach (Book bookRecord in BookList)
             {
                 if (bookRecord.Conflicts(_book))
@@ -49,10 +46,7 @@ namespace BookStoreApp.Models
                     throw new BookRecordConflictException(bookRecord, _book);
                 }
             }
-
-
               BookList.Add(_book);
         }
-
     }
 }

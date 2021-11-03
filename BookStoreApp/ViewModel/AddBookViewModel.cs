@@ -12,88 +12,88 @@ namespace BookStoreApp.ViewModel
     public class AddBookViewModel : ViewModelBase
     {
         //property change for ISBN
-        private long myISBN;
+        private long _ISBN;
 
         public long ISBN
         {
             get
             {
-                return myISBN;
+                return _ISBN;
             }
             set
             {
-                myISBN = ISBN;
-                OnPropertyChanged(nameof(ISBN));
+                _ISBN = ISBN;
+                //OnPropertyChanged(nameof(ISBN));
             }
         }
 
         //property change for title
-        private string myTitle;
+        private string _title;
 
         public string Title
         {
             get
             {
-                return myTitle;
+                return _title;
             }
             set
             {
-                myTitle = Title;
-                OnPropertyChanged(nameof(Title));
+                _title = Title;
+                //OnPropertyChanged(nameof(Title));
             }
         }
 
         //property change for author
-        private string myAuthor;
+        private string _author;
         public string Author
         {
             get
             {
-                return myAuthor;
+                return _author;
             }
             set
             {
-                myAuthor = Author;
-                OnPropertyChanged(nameof(Author));
+                _author = Author;
+                //OnPropertyChanged(nameof(Author));
             }
         }
 
         //property change for description
-        private string myDesctiption;
+        private string _desctiption;
         public string Description
         {
             get
             {
-                return myDesctiption;
+                return _desctiption;
             }
             set
             {
-                myDesctiption = Description;
-                OnPropertyChanged(nameof(Description));
+                _desctiption = Description;
+                //OnPropertyChanged(nameof(Description));
             }
         }
 
         //property change for count
-        private int myCount;
+        private int _count;
         public int Count
         {
             get
             {
-                return myCount;
+                return _count;
             }
             set
             {
-                myCount = Count;
-                OnPropertyChanged(nameof(Count));
+                _count = Count;
+                //OnPropertyChanged(nameof(Count));
             }
         }
         public ICommand SubmitCommand { get; }
-        public ICommand CancelCommand { get; }
+       // public ICommand CancelCommand { get; }
 
         public AddBookViewModel(Store store)
         {
             SubmitCommand = new AddBookCommand(this, store);
-            CancelCommand = new AddBookCommand(this, store);
+            //CancelCommand = new AddBookCommand(this, store);
         }
     }
 
