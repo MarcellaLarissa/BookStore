@@ -22,10 +22,10 @@ namespace BookStoreApp.Commands
            
         }
 
-        public override bool CanExecute(object parameter)
-        {
-            return !string.IsNullOrEmpty(myAddBookViewModel.Title) && base.CanExecute(parameter);
-        }
+        //public override bool CanExecute(object parameter)
+        //{
+        //    return !string.IsNullOrEmpty(myAddBookViewModel.Title) && base.CanExecute(parameter);
+        //}
         public override void Execute(object parameter)
         {
             Book newBook = new Book(myAddBookViewModel.ISBN, myAddBookViewModel.Title, myAddBookViewModel.Author, myAddBookViewModel.Description, myAddBookViewModel.Count);

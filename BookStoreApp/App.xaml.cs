@@ -25,9 +25,10 @@ namespace BookStoreApp
         {
             MainWindow = new MainWindow()
             {
+                //this.DataContext = new MainViewModel(_store)
                 DataContext = new MainViewModel(_store)
             };
-
+            MainWindow.Show();
            // Store myStore = new Store("MP Book Shop");
 
             Inventory inventory = new Inventory();//double check
@@ -44,7 +45,7 @@ namespace BookStoreApp
             _store.CreateBookRecord(_book2);
             _store.CreateBookRecord(_book3);
 
-            IEnumerable<Book> BookList = _store.SearchForBook("Dune");
+            IEnumerable<Book> BookList = _store.SearchForBook("dune");
 
             base.OnStartup(e);
         }

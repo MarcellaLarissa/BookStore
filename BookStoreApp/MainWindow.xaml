@@ -21,13 +21,13 @@
 
             <Grid Grid.Column="0">
                 <StackPanel>
-                    <views:SearchResults/>
+                    <views:SearchResults DataContext="{Binding CurrentViewModel}"/>
                 </StackPanel>
                 
             </Grid>
             <Grid Grid.Column="1">
                 <StackPanel>
-                    <views:AddBook/>
+                    <views:AddBook DataContext="{Binding CurrentViewModel}"/>
                     
                 </StackPanel>
             </Grid>

@@ -19,7 +19,6 @@ C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
 C:\Users\marce\source\repos\BookStore\BookStoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.xml
-C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\App.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\MainWindow.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.baml
@@ -29,3 +28,4 @@ C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj.CoreCompileInputs.cache
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.exe
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.pdb
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj.AssemblyReference.cache
