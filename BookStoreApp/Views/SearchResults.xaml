@@ -79,7 +79,8 @@
                         <GridViewColumn Header="ISBN #">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Padding="0 0 20 0" Text="{Binding ISBN}" />
+                                    <TextBlock Padding="0 0 20 0" Text="9780441172719" />
+                                    <!--<TextBlock Padding="0 0 20 0" Text="{Binding ISBN}" />-->
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>

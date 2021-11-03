@@ -15,5 +15,6 @@ namespace BookStoreApp.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        public virtual void Dispose() { }
     }
 }
