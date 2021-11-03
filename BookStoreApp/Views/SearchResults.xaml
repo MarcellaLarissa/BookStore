@@ -64,7 +64,7 @@
         </Grid>
 
         <Grid Grid.Row="3">
-            <ListView Grid.Row="3" Margin="0 25 0 0" ItemsSource="{Binding Book}"> <!--Not sure if this is binding correctly to BookViewModel-->
+            <ListView Grid.Row="3" Margin="0 25 0 0" ItemsSource="{Binding Books}"> <!--Not sure if this is binding correctly to BookViewModel-->
                 <ListViewItem />
                 <ListViewItem />
                 <ListViewItem />

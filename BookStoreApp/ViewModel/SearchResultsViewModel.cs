@@ -11,18 +11,23 @@ namespace BookStoreApp.ViewModel
 {
     public class SearchResultsViewModel : ViewModelBase
     {
-        public readonly ObservableCollection<BookViewModel> Book;
-        public IEnumerable<SearchResultsViewModel> SearchResults => (IEnumerable<SearchResultsViewModel>)Book; //remove cast?? this needs to point to the correct field timestamp 9:30 ViewModels
+        //private readonly Store _store;
+        public Book aTestBook;
+
+        public readonly ObservableCollection<BookViewModel> _books;
+        public IEnumerable<BookViewModel> Books => _books; //remove cast?? this needs to point to the correct field timestamp 9:30 ViewModels
         public ICommand SearchCommand { get; }
 
         public ICommand AddCommand { get; }
 
-        public SearchResultsViewModel(long ISBN, string title, string author, string description, int count)
+        public SearchResultsViewModel(ObservableCollection<BookViewModel> myBooks)
         {
-            Book = new ObservableCollection<BookViewModel>();
+            _books = new ObservableCollection<BookViewModel>();
 
-            //Book.Add(new SearchResultsViewModel(new Book(0000234235445, "Sherlock Holmes", "Arthur Conan Doyle", "Baker St.", 1)));
-            //Book.Add(myBook);
+            myBooks.Add(new BookViewModel(aTestBook));
+
+            //myBooks.Add(new SearchResultsViewModel(myBooks));
+            //Book.Add(myBooks);
         }
     }
 }

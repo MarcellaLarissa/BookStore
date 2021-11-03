@@ -16,35 +16,35 @@ namespace BookStoreApp
     public partial class App : Application
     {
 
-        private readonly Store store;
+        private readonly Store _store;
         public App()
         {
-            store = new Store("Little Book Shop");
+            _store = new Store("Little Book Shop");
         }
         protected override void OnStartup(StartupEventArgs e)
         {
             MainWindow = new MainWindow()
             {
-                DataContext = new MainViewModel(store)
+                DataContext = new MainViewModel(_store)
             };
 
            // Store myStore = new Store("MP Book Shop");
 
-            //Inventory inventory = new Inventory();//double check
+            Inventory inventory = new Inventory();//double check
 
             ////create books
-            //Book myBook1 = new Book(9780441172719, "Dune", "Frank Herbert", "The Spice", 4);
+            Book _book1 = new Book(9780441172719, "dune", "frank herbert", "the spice", 4);
 
-            //Book myBook2 = new Book(9781411433465, "The War of the Worlds", "H.G. Wells", "Martian invasion", 2);
+            Book _book2 = new Book(9781411433465, "the war of the worlds", "h.g. wells", "martian invasion", 2);
 
-            //Book myBook3 = new Book(9780062276285, "Hogfather", "Terry Pratchett", "Hogswatchnight", 4);
+            Book _book3 = new Book(9780062276285, "hogfather", "terry pratchett", "hogswatchnight", 4);
 
             ////add to booklist
-            //myStore.CreateBookRecord(myBook1);
-            //myStore.CreateBookRecord(myBook2);
-            //myStore.CreateBookRecord(myBook3);
+            _store.CreateBookRecord(_book1);
+            _store.CreateBookRecord(_book2);
+            _store.CreateBookRecord(_book3);
 
-          // IEnumerable<Book> BookList = myStore.SearchForBook("Dune");//wut?
+            IEnumerable<Book> BookList = _store.SearchForBook("Dune");
 
             base.OnStartup(e);
         }

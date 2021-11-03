@@ -8,7 +8,7 @@ namespace BookStoreApp.Models
 {
     public class Store
     {
-        public Inventory Inventory;//might need to be private readonly
+        public Inventory _inventory;//might need to be private readonly
 
         public string Name { get; }
 
@@ -16,19 +16,19 @@ namespace BookStoreApp.Models
         {
             Name = name;
 
-            Inventory = new Inventory();
+            _inventory = new Inventory();
         }
 
         public IEnumerable<Book> SearchForBook(string title)
          //public IEnumerable<Book> GetBookRecordForUser(string title, string author, string keyword, int ISBN)
         {
            // return Inventory.GetBookByTitle(title) + Inventory.GetBookByAuthor(author) + Inventory.GetBookByKeyword(keyword) + Inventory.GetBookByISBN(ISBN);
-            return Inventory.GetBookByTitle(title);
+            return _inventory.GetBookByTitle(title);
         }
 
         public void CreateBookRecord(Book newBook)
         {
-            Inventory.AddBook(newBook);
+            _inventory.AddBook(newBook);
         }
 
     }

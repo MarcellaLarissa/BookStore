@@ -22,18 +22,9 @@ namespace BookStoreApp.ViewModel
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         public ViewModelBase CurrentViewModel { get; }
-        public MainViewModel(Store store)
+        public MainViewModel(Store _store)
         {
-            CurrentViewModel = new AddBookViewModel(store);
-
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            CurrentViewModel = new AddBookViewModel(_store);
         }
     }
 }

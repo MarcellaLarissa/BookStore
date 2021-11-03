@@ -14,16 +14,13 @@ namespace BookStoreApp.Models
         public string Description { get; }
         public int Count { get; }
 
-        public Book(long bookISBN, string title, string author, string description, int numberInStock)
+        public Book(long bookISBN, string title, string author, string description, int count)
         {
-            //Book = new Book();
-
             ISBN = bookISBN;
             Title = title;
             Author = author;
             Description = description;
-            Count = numberInStock;
-
+            Count = count;
         }
 
         public bool Conflicts(Book myBook)
