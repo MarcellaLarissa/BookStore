@@ -93,6 +93,7 @@ namespace BookStoreApp.ViewModel
         public AddBookViewModel(Store store)
         {
             SubmitCommand = new AddBookCommand(this, store);
+            CancelCommand = new AddBookCommand(this, store);
         }
     }
 

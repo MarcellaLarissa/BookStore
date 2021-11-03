@@ -45,7 +45,7 @@ namespace BookStoreApp
             _store.CreateBookRecord(_book2);
             _store.CreateBookRecord(_book3);
 
-            IEnumerable<Book> BookList = _store.SearchForBook("dune");
+            IEnumerable<Book> BookList = _store.SearchForBook("dune"); //returns dune as result, still listed as null?
 
             base.OnStartup(e);
         }

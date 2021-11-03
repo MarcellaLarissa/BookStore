@@ -11,13 +11,13 @@ namespace BookStoreApp.Commands
 {
     public class AddBookCommand : CommandBase
     {
-        private readonly AddBookViewModel myAddBookViewModel;
-        private readonly Store myStore;
+        private readonly AddBookViewModel _addBookViewModel;
+        private readonly Store _store;
   
         public AddBookCommand(AddBookViewModel addBookViewModel, Store store)
         {
-            myAddBookViewModel = addBookViewModel;
-            myStore = store;
+            _addBookViewModel = addBookViewModel;
+            _store = store;
 
            
         }
@@ -28,8 +28,8 @@ namespace BookStoreApp.Commands
         //}
         public override void Execute(object parameter)
         {
-            Book newBook = new Book(myAddBookViewModel.ISBN, myAddBookViewModel.Title, myAddBookViewModel.Author, myAddBookViewModel.Description, myAddBookViewModel.Count);
-            myStore.CreateBookRecord(newBook);
+            Book newBook = new Book(_addBookViewModel.ISBN, _addBookViewModel.Title, _addBookViewModel.Author, _addBookViewModel.Description, _addBookViewModel.Count);
+            _store.CreateBookRecord(newBook);
         }
 
         //cancel command if there is time 13:20

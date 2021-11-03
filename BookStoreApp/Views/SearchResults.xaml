@@ -12,6 +12,7 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
@@ -112,6 +113,26 @@
                     </GridView>
                 </ListView.View>
             </ListView>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <StackPanel Grid.Row="1" 
+                    Margin="5 5 0 0" 
+                    Orientation="Horizontal">
+                <Button 
+                    Content="Edit" 
+                    Padding="10 5"
+                    Width="80"
+                    Command="{Binding EditCommand}"
+                    />
+                <Button 
+                    Margin="10 0 0 0" 
+                    Padding="10 5"
+                    Content="Delete" 
+                    Width="80"
+                    Command="{Binding DeleteCommand}"
+                    />
+            </StackPanel>
         </Grid>
     </Grid>
 </UserControl>

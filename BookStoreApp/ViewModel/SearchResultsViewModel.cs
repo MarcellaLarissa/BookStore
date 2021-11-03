@@ -17,6 +17,8 @@ namespace BookStoreApp.ViewModel
         public readonly ObservableCollection<BookViewModel> _books;
         public IEnumerable<BookViewModel> Books => _books; //remove cast?? this needs to point to the correct field timestamp 9:30 ViewModels
         public ICommand SearchCommand { get; }
+        public ICommand EditCommand { get; }
+        public ICommand DeleteCommand { get; }
 
         //public ICommand AddCommand { get; }
 
