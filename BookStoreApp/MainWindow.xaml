@@ -5,11 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookStoreApp" xmlns:views="clr-namespace:BookStoreApp.Views"
         mc:Ignorable="d"
-        Title="BookStore" Height="450" Width="800">
-    <Grid Margin="20 10" MaxWidth="600">
+        Title="Little Book Store" Height="450" Width="800">
+    <Grid Margin="10 10" MaxWidth="750">
         <Grid>
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition 
+                    Width="auto" 
+                    MinWidth="400" 
+                    />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <StackPanel>
+                    <views:SearchResults/>
+                </StackPanel>
+                
+            </Grid>
+            <Grid Grid.Column="1">
+                <StackPanel>
+                    <views:AddBook/>
+                    
+                </StackPanel>
+            </Grid>
         </Grid>
-        <views:SearchResults/>
+        
     </Grid>
 </Window>

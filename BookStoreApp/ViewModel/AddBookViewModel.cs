@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BookStoreApp.Commands;
+using BookStoreApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +9,7 @@ using System.Windows.Input;
 
 namespace BookStoreApp.ViewModel
 {
-    class AddBookViewModel : ViewModelBase
+    public class AddBookViewModel : ViewModelBase
     {
         //property change for ISBN
         private long myISBN;
@@ -88,9 +90,9 @@ namespace BookStoreApp.ViewModel
         public ICommand SubmitCommand { get; }
         public ICommand CancelCommand { get; }
 
-        public AddBookViewModel()
+        public AddBookViewModel(Store store)
         {
-
+            SubmitCommand = new AddBookCommand(this, store);
         }
     }
 

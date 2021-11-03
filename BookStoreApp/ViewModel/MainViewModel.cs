@@ -1,4 +1,5 @@
 using GalaSoft.MvvmLight;
+using BookStoreApp.Models;
 
 namespace BookStoreApp.ViewModel
 {
@@ -20,9 +21,11 @@ namespace BookStoreApp.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public ViewModelBase CurrentViewModel { get; }
+        public MainViewModel(Store store)
         {
-            
+            CurrentViewModel = new AddBookViewModel(store);
+
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.

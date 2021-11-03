@@ -29,3 +29,4 @@ C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.g.cs
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.g.cs
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\AddBook.baml
 C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\Views\SearchResults.baml
+C:\Users\marce\source\repos\BookStore\BookStoreApp\obj\Debug\BookStoreApp.csproj.CopyComplete

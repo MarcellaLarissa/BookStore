@@ -41,18 +41,18 @@
                     Margin="10 10 0 0" 
                     Orientation="Horizontal">
                 <Button 
-                    Content="Search" 
-                    Padding="10 5"
-                    Width="80"
+                    Content="Go" 
+                    Padding="5 5"
+                    Width="50"
                     Command="{Binding SearchCommand}"
                     />
-                <Button 
+                <!--<Button 
                     Margin="10 0 0 0" 
                     Padding="10 5"
                     Content="Add Book" 
                     Width="80"
                     Command="{Binding AddCommand}"
-                    />
+                    />-->
             </StackPanel>
         </Grid>
         
@@ -64,7 +64,7 @@
         </Grid>
 
         <Grid Grid.Row="3">
-            <ListView Grid.Row="3" Margin="0 25 0 0" ItemsSource="{Binding Book}">
+            <ListView Grid.Row="3" Margin="0 25 0 0" ItemsSource="{Binding Book}"> <!--Not sure if this is binding correctly to BookViewModel-->
                 <ListViewItem />
                 <ListViewItem />
                 <ListViewItem />
